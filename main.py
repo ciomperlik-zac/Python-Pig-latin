@@ -38,12 +38,12 @@ def words_to_latin(words):
             final_message += word[:-1] + end + "ay" + word[-1] + " "
           else:
             final_message += word + end + "ay "
-          vowels = "aeiou"
           end = ""
           break
         else:
           end += i
           word = word[1:]
+    vowels = "aeiou"
   return final_message
 
 message = input("Enter text to be converted into Pig Latin: ")
